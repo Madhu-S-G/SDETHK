@@ -88,38 +88,6 @@ public class BASECLASS {
 		Reporter.log("logged out");
 	}
 	
-	@BeforeMethod(alwaysRun = true)
-	public void loginAsDr() throws Exception {
-		String un=futil.ReadDataFromPropertyFile("dr_username");
-		String pw=futil.ReadDataFromPropertyFile("dr_password");
-		doctorLoginpage doctorLogint = new doctorLoginpage(driver);
-		 doctorLogint.loginAsDoctor(un, pw);
-		Reporter.log("logged in", true);
-	}
-
-	@AfterMethod(alwaysRun = true)
-	public void logoutAsDr() {
-		doctorLoginpage doctorLogint = new doctorLoginpage(driver);
-		doctorLogint.logoutAsDoctor();
-		Reporter.log("logged out");
-	}
-//	
-//	@BeforeMethod(alwaysRun = true)
-//	public void loginAspatient() throws Exception {
-//		String un=futil.ReadDataFromPropertyFile("p_un");
-//		String pw=futil.ReadDataFromPropertyFile("p_pwd");
-//		 PatientLoginPage PatientLogint = new PatientLoginPage(driver);
-//		  PatientLogint.loginAsPatient(un, pw);
-//		Reporter.log("logged in");
-//	}
-//
-//	@AfterMethod(alwaysRun = true)
-//	public void logoutAspatient() throws InterruptedException {
-//		 PatientLoginPage PatientLogint = new PatientLoginPage(driver);
-//		PatientLogint.logoutAsPatient();
-//		Reporter.log("logged out");
-//	}
-
 	@AfterClass(alwaysRun = true)
 
 	public void closebrowser() {
