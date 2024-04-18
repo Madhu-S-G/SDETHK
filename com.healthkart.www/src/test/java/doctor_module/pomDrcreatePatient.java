@@ -64,12 +64,15 @@ doctorHomet.managepatient(pn);
 
 driver.close();
 	}
-	}
+	
 
 
+//Im just Doing Changes go throouh it
+         public void abcd() {
+        	 System.out.println(" Void ");
+         }
 
-
-
+}
 
 /////////////////////////////////////////////////////////////////////////////
 // driver.findElement(By.xpath("//a[@href='hms/doctor/']")).click();
