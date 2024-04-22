@@ -99,6 +99,6 @@ public class adminDeleteSpeclztn_pomobjtest {
 //	       driver.close();
 //	
 	
-	
+	//4200000
 }
 }
